@@ -1,5 +1,8 @@
 .container {
-  padding: 0 2rem;
+  padding: 0 5rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .main {
