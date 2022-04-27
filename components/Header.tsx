@@ -5,7 +5,7 @@ import { InputText } from "primereact/inputtext";
 const HeaderComponent = () => {
   const items = [
     {
-      label: "Home",
+      label: "Inicio",
       icon: "pi pi-fw pi-home",
     },
     {
@@ -13,39 +13,39 @@ const HeaderComponent = () => {
       icon: "pi pi-fw pi-pencil",
       items: [
         {
-          label: "New Post",
+          label: "Nuevo Post",
           icon: "pi pi-fw pi-plus",
         },
         {
-          label: "My Posts",
+          label: "Mis Posts",
           icon: "pi pi-fw pi-book",
         },
       ],
     },
     {
-      label: "Friends",
+      label: "Social",
       icon: "pi pi-fw pi-user",
       items: [
         {
-          label: "My Friends",
+          label: "Mis Contactos",
           icon: "pi pi-fw pi-users",
         },
         {
-          label: "New Friend",
+          label: "Agregar contacto",
           icon: "pi pi-fw pi-user-plus",
         },
         {
-          label: "Remove Friend",
+          label: "Eliminar Contacto",
           icon: "pi pi-fw pi-user-minus",
         },
       ],
     },
     {
-      label: "My Profile",
+      label: "Mi Perfil",
       icon: "pi pi-fw pi-heart",
     },
     {
-      label: "Log Out",
+      label: "Salir",
       icon: "pi pi-fw pi-power-off",
     },
   ];
@@ -54,7 +54,7 @@ const HeaderComponent = () => {
   const start = (
     <img alt="logo" src="/images/icon.png" height="40" className="mr-2"></img>
   );
-  const end = <InputText placeholder="Search" type="text" />;
+  const end = <InputText placeholder="Buscar" type="text" />;
 
   return (
     <div>

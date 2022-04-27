@@ -1,0 +1,25 @@
+[
+  {
+    "id": "1",
+    "title": "Calles con Equidad",
+    "subtitle": "Queremos nombrar 100 calles en honor a 100 mujeres.",
+    "body": "Menos del 1% de las calles en México están nombradas en honor a una mujer. Calles con Equidad busca contribuir al pleno goce de los derechos de las mujeres, incrementando el nombramiento de calles en honor a mujeres notables de la historia de México.",
+    "img": "http://www.basic-concept.com/public/images/uploads/feminism.png"
+  },
+
+  {
+    "id": "2",
+    "title": "Debanhi Escobar",
+    "subtitle": "La punta del iceberg de lo que ocurre en Nuevo León",
+    "body": "La repercusión del caso de Debanhi Escobar, la joven de 18 años que apareció muerta en México el pasado jueves tras casi dos semanas desaparecida, puso al estado norteño de Nuevo León bajo el foco de atención. Porque, al margen de las incógnitas que aún rodean su caso. ",
+    "img": "https://www.sopitas.com/wp-content/uploads/2022/04/debanhi-escobar-resumen-deudas-preguntas-pendientes-todo-salio-mal-desaparecida-nuevo-leon-cisterna-taxista.png?w=1024"
+  },
+
+  {
+    "id": "3",
+    "title": "Feminismo en México",
+    "subtitle": "Algunas reflexiones sobre el movimiento feminista en México",
+    "body": "En este momento en el que 90 países están en situación de confinamiento, 4000 millones de personas se refugian en casa ante el contagio mundial del COVID-19. Se trata de una medida de protección, pero conlleva otro peligro mortal. La violencia contra las mujeres.",
+    "img": "https://i0.wp.com/www.freim.tv/wp-content/uploads/2021/01/IMG_1274-2.png"
+  }
+]

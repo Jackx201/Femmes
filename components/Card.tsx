@@ -1,39 +1,53 @@
 import React from "react";
 import { Card } from "primereact/card";
 import { Button } from "primereact/button";
+import ButtonComponent from "./ButtonComponent";
 
-const CardComponent = () => {
-  const header = (
-    <img
-      alt="Card"
-      src="http://www.basic-concept.com/public/images/uploads/feminism.png"
-    />
-  );
+interface CardProps {
+  /**
+   * Key for the element
+   */
+  id?: string;
+  /**
+   * Image Source
+   */
+  imgsrc?: string;
+  /**
+   * Header for the card
+   */
+  title?: string;
+  /**
+   * Sub Header for the card
+   */
+  subtitle?: string;
+  /**
+   * Header for the card
+   */
+  body?: string;
+}
+
+const CardComponent = (props: CardProps) => {
+  const header = <img alt="Card" src={props.imgsrc} height="200px" />;
   const footer = (
     <span>
-      <Button label="Save" icon="pi pi-check" />
-      <Button
-        label="Cancel"
-        icon="pi pi-times"
-        className="p-button-secondary ml-2"
-      />
+      <ButtonComponent icon="pi pi-heart" className="p-button-rounded p-button-help" label="Favorite"/>
+      <ButtonComponent icon="pi pi-comments" className="p-button-rounded p-button-secondary ml-3" label="Favorite"/>
+      <ButtonComponent icon="pi pi-share-alt" className="p-button-rounded p-button-info ml-3" label="Favorite"/>
     </span>
   );
 
   return (
     <div>
       <Card
-        title="Advanced Card"
-        subTitle="Subtitle"
+        id={props.id}
+        title={props.title}
+        subTitle={props.subtitle}
         style={{ width: "21em" }}
         footer={footer}
         header={header}
       >
         <p className="m-0" style={{ lineHeight: "1.5" }}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
-          sed consequuntur error repudiandae numquam deserunt quisquam repellat
-          libero asperiores earum nam nobis, culpa ratione quam perferendis
-          esse, cupiditate neque quas!
+          {props.body}
         </p>
       </Card>
     </div>
