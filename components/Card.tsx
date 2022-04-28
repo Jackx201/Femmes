@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "primereact/card";
-import { Button } from "primereact/button";
 import ButtonComponent from "./ButtonComponent";
+import CardFooterComponent from "./CardFooterComponent";
 
 interface CardProps {
   /**
@@ -30,9 +30,7 @@ const CardComponent = (props: CardProps) => {
   const header = <img alt="Card" src={props.imgsrc} height="200px" />;
   const footer = (
     <span>
-      <ButtonComponent icon="pi pi-heart" className="p-button-rounded p-button-help" label="Favorite"/>
-      <ButtonComponent icon="pi pi-comments" className="p-button-rounded p-button-secondary ml-3" label="Favorite"/>
-      <ButtonComponent icon="pi pi-share-alt" className="p-button-rounded p-button-info ml-3" label="Favorite"/>
+      <CardFooterComponent></CardFooterComponent>
     </span>
   );
 
