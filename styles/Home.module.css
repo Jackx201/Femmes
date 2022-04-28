@@ -5,6 +5,13 @@
   justify-content: center;
 }
 
+.editor {
+  margin: 3%;
+  display: flexbox;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .main {
   min-height: 100vh;
   padding: 4rem 0;
