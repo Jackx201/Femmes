@@ -7,6 +7,7 @@ const HeaderComponent = () => {
     {
       label: "Inicio",
       icon: "pi pi-fw pi-home",
+      command: () =>  { location.href = '/' }
     },
     {
       label: "Post",
@@ -15,6 +16,7 @@ const HeaderComponent = () => {
         {
           label: "Nuevo Post",
           icon: "pi pi-fw pi-plus",
+          command: () =>  { location.href = '/newPost' }
         },
         {
           label: "Mis Posts",
@@ -59,8 +61,9 @@ const HeaderComponent = () => {
   return (
     <div>
       <div className="card">
-        <Menubar model={items} start={start} end={end} />
+        <Menubar model={items} start={start} end={end}/>
       </div>
+      
     </div>
   );
 };

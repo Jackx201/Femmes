@@ -22,7 +22,7 @@ const TextEditorComponent = (props: EditorProps) => {
         <Editor
           style={{ height: "320px" }}
           value={text}
-          placeholder=""
+          placeholder={props.placeholder}
           onTextChange={(e) => setText(e.textValue)}
         />
       </div>
