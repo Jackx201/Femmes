@@ -10,7 +10,6 @@ const newPost = () => {
         <form action="">
           <TextEditorComponent
             header="Nueva Publicación"
-            placeholder="Expresate, estamos aquí para escucharte."
           ></TextEditorComponent>
         </form>
       </div>

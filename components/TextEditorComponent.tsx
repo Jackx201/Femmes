@@ -17,19 +17,23 @@ const TextEditorComponent = (props: EditorProps) => {
   const [text, setText] = useState<string>("");
   return (
     <div>
-      <div className="card">
+      <div className="card editor">
         <h1>{props.header}</h1>
         <Editor
-          style={{ height: "320px" }}
+          style={{ height: "420px" }}
           value={text}
           placeholder={props.placeholder}
           onTextChange={(e) => setText(e.textValue)}
+          className="editor"
         />
       </div>
+      <div className="container">
       <Button className="my-3">Publicar</Button>
       <Button type="reset" className="p-button-secondary my-3 ml-3">
         Cancelar
       </Button>
+      </div>
+
     </div>
   );
 };

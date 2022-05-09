@@ -54,14 +54,14 @@ const HeaderComponent = () => {
 
   <Menubar model={items} />;
   const start = (
-    <img alt="logo" src="/images/icon.png" height="40" className="mr-2"></img>
+    <img alt="logo" src="/images/icon.png" height="50" className="mr-2"></img>
   );
-  const end = <InputText placeholder="Buscar" type="text" />;
+  const end = <InputText placeholder="Buscar" type="text" className="search-input"/>;
 
   return (
     <div>
       <div className="card">
-        <Menubar model={items} start={start} end={end}/>
+        <Menubar model={items} start={start} end={end} className="menubar"/>
       </div>
       
     </div>

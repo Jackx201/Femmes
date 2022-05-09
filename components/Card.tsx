@@ -43,6 +43,7 @@ const CardComponent = (props: CardProps) => {
         style={{ width: "21em" }}
         footer={footer}
         header={header}
+        className="card"
       >
         <p className="m-0" style={{ lineHeight: "1.5" }}>
           {props.body}
