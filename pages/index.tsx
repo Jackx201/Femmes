@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <HeaderComponent></HeaderComponent>
-      <div className={styles.container}>
+      <div className="container">
         <h1>Artículos</h1>
       </div>
       <div className={styles.container}>
@@ -27,7 +27,7 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <div className={styles.container}>
+      <div className={"container"}>
         <h1>Ayudanos a Encontrarlas</h1>
       </div>
       <div className={styles.container}>
