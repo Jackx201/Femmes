@@ -18,6 +18,10 @@ a {
   box-sizing: border-box;
 }
 
+p{
+  color: aliceblue;
+}
+
 h1{
   color: aliceblue;
 }
@@ -75,4 +79,47 @@ h1{
 
 .p-editor-content{
   border: #4f1c82 !important;
+}
+
+.article{
+  display: flex;
+  justify-content: center;
+}
+
+.picture{
+  border-radius: 50px;
+  display: flex;
+  width: 500px; 
+  height: 500px; 
+  justify-content: center;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 0px) and (max-width: 516px) {
+  .picture { 
+    width: 300px; 
+    height: 300px; 
+  }  
+  
+  .container {
+    padding: 0 0rem;
+  }
+}
+
+
+.info{
+  font-size: 120%;
+}
+
+.user-info{
+  color: rgb(237, 165, 165);
+  margin-top: -3%;
+}
+
+#nombre{
+  font-size: 350% !important;
+}
+
+#statusBanner{
+  background-color: rgb(232, 78, 78);
 }
