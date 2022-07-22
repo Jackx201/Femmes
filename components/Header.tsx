@@ -1,6 +1,8 @@
 import React from "react";
 import { Menubar } from "primereact/menubar";
 import { InputText } from "primereact/inputtext";
+import ButtonComponent from "./ButtonComponent";
+import { Button } from "primereact/button";
 
 const HeaderComponent = () => {
   const items = [
@@ -45,18 +47,15 @@ const HeaderComponent = () => {
     {
       label: "Mi Perfil",
       icon: "pi pi-fw pi-heart",
-    },
-    {
-      label: "Salir",
-      icon: "pi pi-fw pi-power-off",
-    },
+    }
   ];
 
   <Menubar model={items} />;
   const start = (
     <img alt="logo" src="/images/icon.png" height="50" className="mr-2"></img>
   );
-  const end = <InputText placeholder="Buscar" type="text" className="search-input"/>;
+
+  const end = <a href="/login"> <Button id="logoutBtn" label="Sign In" icon="pi pi-key" className="mr-2 p-button-rounded"/> </a>
 
   return (
     <div>

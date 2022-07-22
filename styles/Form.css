@@ -1,0 +1,45 @@
+.login-container{
+  background-image: url('../public/images/loginbg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.p-inputtext{
+  background-color: #623d95 !important;
+}
+
+.fieldLabel{
+  background-color: transparent !important;
+}
+
+.p-datepicker-trigger{
+  background-color: rgb(212, 74, 162) !important;
+}
+.form-demo .card {
+  min-width: 600px;
+  padding: 5%;
+  background-color: #933db5f3!important;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0 30px rgb(252, 252, 252);
+  box-shadow: 0 0 30px rgb(255, 255, 255);
+}
+
+.form-demo .card .field {
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 960px) {
+  .form-demo .card {
+      width: 80%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .form-demo .card {
+      width: 100%;
+      min-width: 0;
+  }
+}
+           

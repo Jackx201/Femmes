@@ -124,6 +124,12 @@ h1{
   background-color: rgb(232, 78, 78);
 }
 
-.p-submenu-list{
+.p-submenu-list, .p-menubar-root-list{
   background-color: #ce577d !important;
+}
+
+#logoutBtn{
+  background-color: #cd82aa !important;
+  opacity: 80% !important;
+  color: rgb(255, 255, 255) !important;
 }
