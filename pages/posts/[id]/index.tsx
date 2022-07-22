@@ -1,6 +1,4 @@
 import { useRouter } from "next/router";
-import { Card } from "primereact/card";
-import { Image } from "primereact/image";
 import HeaderComponent from "../../../components/Header";
 
 export default function PostsPage() {
@@ -67,21 +65,15 @@ export default function PostsPage() {
               de Derecho de 18 años de edad, hija de Mario Escobar y Dolores
               Bazaldúa.Alrededor de las 11 de la noche del viernes 8 de
               abril de 2022, Escobar salió de su casa para ir a una fiesta a la
-              que fue acompañada por dos amigas; Saraí (a quien conocía 3 meses
-              atrás) e Ivonne (a quien conoció esa noche). Cerca de las 11:30,
+              que fue acompañada por dos amigas; Saraí e Ivonne. Cerca de las 11:30,
               las tres llegaron en un taxi de plataforma digital a una reunión
               en la calle Simón Bolívar, en el centro de San Nicolás, lugar en
               donde además fueron a una tienda de autoservicio a comprar una
-              botella de vodka y otros artículos para acompañar la bebida. En
-              declaraciones se menciona que Escobar consumió bebidas
-              alcohólicas, y después, la chica y sus acompañantes se trasladaron
-              a otra fiesta en el centro de San Nicolás en donde nadie les
-              abrió; ante esto decidieron irse a otra reunión solicitando un
-              taxi de la plataforma DiDi.8Las amigas comentaron en una
-              declaración que pidieron un automóvil de esta compañía a las 12:49
-              del sábado 9 de abril, y lo abordaron a la 1:00 de la mañana, el
-              cual las llevaría a una Quinta ubicada en Vía Numancia, Colonia
-              Nueva Castilla, del municipio de Escobedo. 
+              botella de vodka y otros artículos para acompañar la bebida.
+              Las amigas comentaron en una declaración que pidieron un automóvil 
+              de la compañía didi a las 12:49del sábado 9 de abril,
+              y lo abordaron a la 1:00 de la mañana, el
+              cual las llevaría a una Quinta ubicada en Vía Numancia.
             </p>
           </div>
           {/* End Info */}

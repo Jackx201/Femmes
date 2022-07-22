@@ -123,3 +123,7 @@ h1{
 #statusBanner{
   background-color: rgb(232, 78, 78);
 }
+
+.p-submenu-list{
+  background-color: #ce577d !important;
+}
