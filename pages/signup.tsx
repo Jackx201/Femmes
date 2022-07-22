@@ -8,7 +8,7 @@ import { Dialog } from "primereact/dialog";
 import { Divider } from "primereact/divider";
 import { classNames } from "primereact/utils";
 
-const login = () => {
+const signup = () => {
   const [showMessage, setShowMessage] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -16,8 +16,6 @@ const login = () => {
     password: "",
     date: null,
   });
-
-  const [password, setPassword] = useState('');
 
   const defaultValues = {
     name: "",
@@ -100,8 +98,37 @@ const login = () => {
 
         <div className="flex justify-content-center">
           <div className="card">
-            <h1 className="text-center">Iniciar Sesión</h1>
+            <h1 className="text-center">Registrarse</h1>
             <form onSubmit={handleSubmit(onSubmit)} className="p-fluid">
+              <div className="field pt-3">
+                <span className="p-float-label">
+                  <Controller
+                    name="name"
+                    control={control}
+                    rules={{ required: "Necesitas llenar este campo" }}
+                    render={({ field, fieldState }) => (
+                      <InputText
+                        id={field.name}
+                        {...field}
+                        autoFocus
+                        className={classNames({
+                          "p-invalid": fieldState.invalid,
+                        })}
+                      />
+                    )}
+                  />
+                  <label
+                    htmlFor="name"
+                    className={classNames(
+                      { "p-error": errors.name },
+                      "fieldLabel"
+                    )}
+                  >
+                    Nombre *
+                  </label>
+                </span>
+                {getFormErrorMessage("name")}
+              </div>
               <div className="field pt-3">
                 <span className="p-float-label p-input-icon-right">
                   <i className="pi pi-envelope" />
@@ -140,7 +167,27 @@ const login = () => {
               </div>
               <div className="field pt-3">
                 <span className="p-float-label">
-                <Password value={password} onChange={(e) => setPassword(e.target.value)} toggleMask feedback={false} />
+                  <Controller
+                    name="password"
+                    control={control}
+                    rules={{ required: "Se necesita una contraseña." }}
+                    render={({ field, fieldState }) => (
+                      <Password
+                        id={field.name}
+                        {...field}
+                        toggleMask
+                        className={classNames({
+                          "p-invalid": fieldState.invalid,
+                        })}
+                        header={passwordHeader}
+                        footer={passwordFooter}
+                        promptLabel="Ingrese una contraseña segura"
+                        weakLabel="Débil"
+                        mediumLabel="Decente"
+                        strongLabel="Fuerte"
+                      />
+                    )}
+                  />
                   <label
                     htmlFor="password"
                     className={classNames(
@@ -153,18 +200,37 @@ const login = () => {
                 </span>
                 {getFormErrorMessage("password")}
               </div>
+              <div className="field py-3">
+                <span className="p-float-label">
+                  <Controller
+                    name="date"
+                    control={control}
+                    render={({ field }) => (
+                      <Calendar
+                        id={field.name}
+                        value={field.value}
+                        onChange={(e) => field.onChange(e.value)}
+                        dateFormat="dd/mm/yy"
+                        mask="99/99/9999"
+                        showIcon
+                      />
+                    )}
+                  />
+                  <label htmlFor="date" className="fieldLabel">Fecha de Nacimiento</label>
+                </span>
+              </div>
               {/* Términos y condiciones */}
               <div className="text-center">
                 <Button
                   type="submit"
-                  label="Iniciar Sesión"
+                  label="Registrarse"
                   className="my-2 p-button-success w-5 p-button-rounded"
                 />
               </div>
             </form>
 
             <div className="text-center my-3 text-white">
-              <a href="/signup">¿Aún no tienes una cuenta? <br /> Crea una aquí</a>
+              <a href="/login">¿Ya tienes una cuenta? <br /> Ingresa aquí</a>
               </div>
 
           </div>
@@ -174,4 +240,4 @@ const login = () => {
   );
 };
 
-export default login;
+export default signup;

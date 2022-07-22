@@ -55,7 +55,7 @@ const HeaderComponent = () => {
     <img alt="logo" src="/images/icon.png" height="50" className="mr-2"></img>
   );
 
-  const end = <a href="/login"> <Button id="logoutBtn" label="Sign In" icon="pi pi-key" className="mr-2 p-button-rounded"/> </a>
+  const end = <a href="/login"> <Button id="logoutBtn" label="Ingresar" icon="pi pi-key" className="mr-2 p-button-rounded"/> </a>
 
   return (
     <div>
