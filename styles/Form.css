@@ -1,8 +1,6 @@
 .login-container{
-  background-image: url('../public/images/loginbg.png');
-  background-repeat: no-repeat;
+  background-image: url('../public/images/bg6.jpg');
   background-attachment: fixed;
-  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,7 +10,11 @@
 }
 
 .fieldLabel{
-  background-color: transparent !important;
+  background-color: #623d95 !important;
+}
+
+.p-error{
+  color: rgb(255, 173, 173) !important;
 }
 
 .p-datepicker-trigger{
@@ -22,7 +24,7 @@
   min-width: 600px;
   padding: 5%;
   background-color: #933db5f3!important;
-  border-radius: 50px;
+  border-radius: 35px;
   -webkit-box-shadow: 0 0 30px rgb(252, 252, 252);
   box-shadow: 0 0 30px rgb(255, 255, 255);
 }
