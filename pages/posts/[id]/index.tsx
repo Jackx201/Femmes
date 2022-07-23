@@ -15,7 +15,7 @@ export default function PostsPage() {
         <div className="grid">
           <div className="col picture">
             <img
-              src="https://ichef.bbci.co.uk/news/640/cpsprodpb/03F8/production/_124261010_42616860-37f8-45c5-bf79-b988eb9a11e7.jpg"
+              src="/images/victimas/1.jpg"
               alt=""
               className="picture"
             />

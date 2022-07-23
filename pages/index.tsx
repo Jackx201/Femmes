@@ -36,9 +36,9 @@ const Home = () => {
             <div className="col" key={missing.id}>
               <CardComponent
                 id={missing.id}
-                title={missing.title}
-                subtitle={missing.subtitle}
-                body={missing.body}
+                title={missing.titulo}
+                subtitle={missing.usuario}
+                body={missing.descripcion}
                 imgsrc={missing.img}
               ></CardComponent>
             </div>

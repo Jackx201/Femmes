@@ -1,33 +1,99 @@
 [
-  {
-    "id": "1",
-    "title": "Pamela Castillón García",
-    "subtitle": "Janeth Bacilio",
-    "body": "colaboración y ayuda para localizar a pamela sarahí castillón garcía; ella tiene 14 años de edad. tiene cabello negro y es de tez blanca. desapareció el martes 15 de marzo de 2022 en oriente #217 en la cuchilla agrícola oriental, alcaldía iztacalco. va vestida con un pants blanco con negro y sudadera gris. cualquier información, agradecemos marcar al    552368-1877. Por el favor de su amable atención y valiosa ayuda",
-    "img": "https://cdn2.excelsior.com.mx/media/inside-the-note/pictures/2022/03/17/pamela-sarahi-4.jpg"
-  },
-
-  {
-    "id": "2",
-    "title": "Sugey Parra",
-    "subtitle": "Nay Gonzáles",
-    "body": "SUGEY PARRA una chica de Torreón Coahuila que su único error fue aceptar salir de viaje con su amigo a mazatlán y ya no regresó? 8 MESES y su caso sigue como comenzó,su mamá viaja constantemente a mazatlán para obtener información y ayuda,la cual no ah recibido. Se hará una marcha el 1 de mayo con el fin de EXIGIR ayuda sobre el caso de SUGEY,12 pm. nos falta sugey y muchas chicas más  que privaron de su libertad.",
-    "img": "https://www.elsiglodedurango.com.mx/m/i/2021/09/1013007.jpeg"
-  },
-
-  {
-    "id": "3",
-    "title": "Karina Napoles Roldan",
-    "subtitle": "Cassandra Rodríguez",
-    "body": "Lamento informar que mi amiga y compañera del trabajo esta desaparecida ella es Enfermera del turno Vespertino del Hospital General Tlahuac desde el dia 11 de Marzo del presente año ella es: Karina Nápoles Roldán, Lleva más de 72 horas desaparecida ella Radica en el Barrio de Cruztitla en el Pueblo de San Antonio Tecomilt en la Alcaldía de Milpa Alta. Porfavor ayudemos a sus familiares a difundir para encontrarla pronto!!!",
-    "img": "https://cdn2.excelsior.com.mx/media/styles/image800x600/public/pictures/2022/03/22/2732411.jpg"
-  },
-
-  {
-    "id": "4",
-    "title": "Margarita Sánchez",
-    "subtitle": "Marco Fuentes",
-    "body": "Amigos, por favor pido su colaboración, para compartir este mensaje y foto, la muchacha de la foto, de nombre Margarita Sánchez Sánchez, desapareció de su casa en la Trinidad Texcoco, en el 2009 justo el día de su graduación de secundaria, tenía 16 años y fue vista por última vez en compañía de su mejor amiga, que un año después de esto, supuestamente se suicido, yo creo que no fue suicidio. Agradecería enormemente su ayuda.",
-    "img": "https://pbs.twimg.com/media/C2owYeqUkAA_h0o?format=jpg&name=large"
-  }
+      {
+        "id": 1,
+        "titulo": "Debanhi Escobar",
+        "descripcion": "Debanhi Susana Escobar Bazaldúa (Monterrey, Nuevo León, 4 de septiembre de 2003-21 de abril de 2022), fue una joven estudiante de Derecho de 18 años de edad, hija de Mario Escobar y Dolores Bazaldúa.Alrededor de las 11 de la noche del viernes 8 de abril de 2022, Escobar salió de su casa para ir a una fiesta a la que fue acompañada por dos amigas; Saraí e Ivonne. Cerca de las 11:30, las tres llegaron en un taxi de plataforma digital a una reunión en la calle Simón Bolívar, en el centro de San Nicolás, lugar en donde además fueron a una tienda de autoservicio a comprar una botella de vodka y otros artículos para acompañar la bebida. Las amigas comentaron en una declaración que pidieron un automóvil de la compañía didi a las 12:49del sábado 9 de abril, y lo abordaron a la 1:00 de la mañana, el cual las llevaría a una Quinta ubicada en Vía Numancia.",
+        "usuario": "Zahúl Domínguez",
+        "estado": "Nuevo León",
+        "status": "Desaparecida",
+        "img": "/images/victimas/1.jpg",
+        "comentarios": [],
+        "numeroContacto": "8713421279",
+        "ultimaLocalizacion": "Nuevo Castilla"
+    },
+    {
+        "id": 2,
+        "titulo": "Sugey Parra",
+        "descripcion": "SUGEY PARRA una chica de Torreón Coahuila que su único error fue aceptar salir de viaje con su amigo a mazatlán y ya no regresó? 8 MESES y su caso sigue como comenzó,su mamá viaja constantemente a mazatlán para obtener información y ayuda,la cual no ah recibido. Se hará una marcha el 1 de mayo con el fin de EXIGIR ayuda sobre el caso de SUGEY,12 pm. nos falta sugey y muchas chicas más  que privaron de su libertad.",
+        "usuario": "Nay Gonzáles",
+        "estado": "Coahuila",
+        "status": "Desaparecida",
+        "img": "/images/victimas/2.jpg",
+        "comentarios": [],
+        "numeroContacto": "8713421200",
+        "ultimaLocalizacion": "Mazatlán"
+    },
+    {
+        "id": 3,
+        "titulo": "Karina Napoles Roldan",
+        "descripcion": "Lamento informar que mi amiga y compañera del trabajo esta desaparecida ella es Enfermera del turno Vespertino del Hospital General Tlahuac desde el dia 11 de Marzo del presente año ella es: Karina Nápoles Roldán, Lleva más de 72 horas desaparecida ella Radica en el Barrio de Cruztitla en el Pueblo de San Antonio Tecomilt en la Alcaldía de Milpa Alta. Porfavor ayudemos a sus familiares a difundir para encontrarla pronto!!!",
+        "usuario": "Cassandra Rodríguez",
+        "estado": "Ciudad de México",
+        "status": "Desaparecida",
+        "img": "/images/victimas/3.jpg",
+        "comentarios": [],
+        "numeroContacto": "8713421202",
+        "ultimaLocalizacion": "Hospital General Tlahuac"
+    },
+    {
+        "id": 4,
+        "titulo": "Margarita Sánchez",
+        "descripcion": "Amigos, por favor pido su colaboración, para compartir este mensaje y foto, la muchacha de la foto, de nombre Margarita Sánchez Sánchez, desapareció de su casa en la Trinidad Texcoco, en el 2009 justo el día de su graduación de secundaria, tenía 16 años y fue vista por última vez en compañía de su mejor amiga, que un año después de esto, supuestamente se suicido, yo creo que no fue suicidio. Agradecería enormemente su ayuda.\r\n",
+        "usuario": "Marco Fuentes",
+        "estado": "Estado de México",
+        "status": "Encontrada sin vida",
+        "img": "/images/victimas/4.jpg",
+        "comentarios": [],
+        "numeroContacto": "8713421203",
+        "ultimaLocalizacion": "Trinidad de Texcoco"
+    },
+    {
+        "id": 9,
+        "titulo": "Luz Raquel",
+        "descripcion": "La vida de Luz Raquel Padilla fue segada en solo cuatro días. El sábado 16 de julio, algunos de sus vecinos decidieron arrojarle gasolina y prenderle fuego porque estaban molestos por los gritos y las patadas que Bruno, su hijo, daba a la pared. El niño tiene 11 años y está diagnosticado con autismo severo.Por la agresión, Luz Raquel tuvo quemaduras en 90% del cuerpo, permaneció tres días en el hospital y murió este martes.",
+        "usuario": "Siboney Flores",
+        "estado": "Jalisco",
+        "status": "Encontrada sin vida",
+        "img": "/images/victimas/5.jpg",
+        "comentarios": [],
+        "numeroContacto": "8713421204",
+        "ultimaLocalizacion": "Zapopan"
+    },
+    {
+        "id": 10,
+        "titulo": "Pamela Castillón García",
+        "descripcion": "Colaboración y ayuda para localizar a pamela sarahí castillón garcía; ella tiene 14 años de edad. tiene cabello negro y es de tez blanca. desapareció el martes 15 de marzo de 2022 en oriente #217 en la cuchilla agrícola oriental, alcaldía iztacalco. va vestida con un pants blanco con negro y sudadera gris. cualquier información, agradecemos marcar al 552368-1877. Por el favor de su amable atención y valiosa ayuda",
+        "usuario": "Janeth Bacilio",
+        "estado": "Ciudad de México",
+        "status": "Desaparecida",
+        "img": "/images/victimas/6.jpg",
+        "comentarios": [],
+        "numeroContacto": "552368-1877",
+        "ultimaLocalizacion": "oriente #217 en la cuchilla agrícola oriental"
+    },
+    {
+        "id": 11,
+        "titulo": "Yolanda Martínez Cadena",
+        "descripcion": "Yolanda Martínez Cadena, una joven de 26 años, desapareció el 31 de marzo en Nuevo León y este fin de semana fue hallado un cuerpo que coincide con las vestimentas que llevaba la última vez que se le vio. Esto es lo que sabemos hasta el momento sobre el caso de Yolanda Martínez.",
+        "usuario": "Martina Fuentes",
+        "estado": "Nuevo León",
+        "status": "Desaparecida",
+        "img": "/images/victimas/7.jpg",
+        "comentarios": [],
+        "numeroContacto": "8120205700",
+        "ultimaLocalizacion": "San Nicolás de los Garza"
+    },
+    {
+        "id": 12,
+        "titulo": "Natalie Michelle Fernández",
+        "descripcion": "Familiares de la adolescente Natalie Michelle Fernández Ortíz, iniciaron una campaña a través de redes sociales para difundir la ficha de búsqueda de la joven, quien desde ayer que acudió a la escuela en Pachuca, Hidalgo, se desconoce su paradero.\r\nDe acuerdo con su tía Dulce Jeannete Ortiz Martínez, ayer su sobrina salió de su domicilio en Pachuca para presentarse en la escuela preparatoria número uno, dependiente de la Universidad Autónoma del Estado de Hidalgo. La joven acudió dos veces al colegio, ya que tiene clases tanto en la mañana como en la tarde. Dijo que Natalie regresó alrededor de las 14:00 horas a comer con su familia y posteriormente se dirigió a la preparatoria para cursar una materia de tres a cinco de la tarde.",
+        "usuario": "Martina Fuentes",
+        "estado": "Hidalgo",
+        "status": "Desaparecida",
+        "img": "/images/victimas/8.jpg",
+        "comentarios": [],
+        "numeroContacto": "8120205700",
+        "ultimaLocalizacion": "Universidad Autónoma del Estado de Hidalgo."
+    }
 ]
+

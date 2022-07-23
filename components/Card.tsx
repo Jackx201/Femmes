@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "primereact/card";
-import ButtonComponent from "./ButtonComponent";
 import CardFooterComponent from "./CardFooterComponent";
+import Link from 'next/link'
 
 interface CardProps {
   /**
@@ -34,21 +34,27 @@ const CardComponent = (props: CardProps) => {
     </span>
   );
 
+  function redirect(){
+
+  }
+
   return (
     <div>
-      <Card
+      <Link href={`/posts/${props.id}`} >
+      <Card 
         id={props.id}
         title={props.title}
         subTitle={props.subtitle}
-        style={{ width: "21em" }}
+        style={{ width: "21em", cursor: 'pointer' }}
         footer={footer}
         header={header}
         className="card"
       >
         <p className="m-0" style={{ lineHeight: "1.5" }}>
-          {props.body}
+          {props.body?.substring(0, 255)} <a href="#">... Ver más</a>
         </p>
       </Card>
+      </Link>
     </div>
   );
 };
