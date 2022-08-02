@@ -27,7 +27,7 @@ interface CardProps {
 }
 
 const CardComponent = (props: CardProps) => {
-  const header = <img alt="Card" src={props.imgsrc} height="200px" />;
+  const header = <img className="thumb-picture" alt="Card" src={props.imgsrc} height="200px" />;
   const footer = (
     <span>
       <CardFooterComponent></CardFooterComponent>

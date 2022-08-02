@@ -22,6 +22,7 @@ export default function PostsPage() {
   const getPost = async () => {
     const res = await fetch(
       `http://localhost:8080/api/publicaciones/${query.id}`
+      // `http://zahuldominguez.ddns.net:8080/api/publicaciones/${query.id}` 
     );
     const data = await res.json();
     setNewPost({
