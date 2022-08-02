@@ -5,10 +5,8 @@ import React from "react";
 import { useRouter } from "next/router";
 
 const Home = ({ posts }: any) => {
-  const router = useRouter();
 
   const data = require("./api/data.json");
-  const missing = require("./api/missing.json")
   return (
     <>
       <HeaderComponent></HeaderComponent>
@@ -30,13 +28,13 @@ const Home = ({ posts }: any) => {
           ))}
         </div>
       </div>
-      <div className={"container"}>
+      <div className={"container my-3"}>
         <h1>Ayudanos a Encontrarlas</h1>
       </div>
       <div className={styles.container}>
-        <div className="grid my-3">
+        <div className="grid">
           {posts.map((post?: any) => (
-            <div className="col" key={post.id}>
+            <div className="col my-5" key={post.id}>
               <CardComponent
                 id={post.id}
                 title={post.titulo}

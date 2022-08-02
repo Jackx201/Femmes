@@ -1,8 +1,47 @@
 import { useRouter } from "next/router";
 import HeaderComponent from "../../../components/Header";
+import { useState, useEffect } from "react";
 
 export default function PostsPage() {
-  const router = useRouter();
+  
+  const { query } = useRouter();
+
+  const [newPost, setNewPost] = useState({
+    titulo: "",
+    descripcion: "",
+    usuario: "",
+    fechaDesaparicion: "",
+    estado: "",
+    status: "",
+    img: "",
+    comentarios: [],
+    numeroContacto: "",
+    ultimaLocalizacion: "",
+  });
+
+  const getPost = async () => {
+    const res = await fetch(
+      `http://localhost:8080/api/publicaciones/${query.id}`
+    );
+    const data = await res.json();
+    setNewPost({
+      titulo: data.titulo,
+      descripcion: data.descripcion,
+      usuario: data.usuario,
+      fechaDesaparicion: data.fechaDesaparicion,
+      estado: data.estado,
+      status: data.status,
+      img: data.img,
+      comentarios: data.comentarios,
+      numeroContacto: data.numeroContacto,
+      ultimaLocalizacion: data.ultimaLocalizacion
+    });
+  };
+
+  useEffect(() => {
+    if(query.id) getPost();
+  }, [query.id]);
+
   return (
     <>
       <HeaderComponent></HeaderComponent>
@@ -15,7 +54,7 @@ export default function PostsPage() {
         <div className="grid">
           <div className="col picture">
             <img
-              src="/images/victimas/1.jpg"
+              src={newPost.img}
               alt=""
               className="picture"
             />
@@ -23,57 +62,42 @@ export default function PostsPage() {
 
           {/* Begin Info */}
           <div className="col-8 ">
-            <h1 id="nombre"> Debanhi Escobar </h1>
+            <h1 id="nombre"> {newPost.titulo} </h1>
 
             <div className="user-info">
               <h5>
-                <i className="mr-1 pi pi-user"></i> Publicado: Zahúl Domínguez
-                el día 10/04/2022
+                <i className="mr-1 pi pi-user"></i> Publicado: {newPost.usuario + " el día: " + newPost.fechaDesaparicion} 
               </h5>
             </div>
 
             <div className="details">
               <p>
                 {" "}
-                <i className="mr-1 pi pi-calendar-times"></i>{" "}
-                <b> Fecha de desaparición:</b> 08/Abril/2022{" "}
+                <i className="mr-1 pi pi-calendar-times"></i>
+                <b> Fecha de desaparición: { newPost.fechaDesaparicion} </b>
               </p>
               <p>
                 {" "}
-                <i className="mr-1 pi pi-phone"></i> <b> Por favor informe:</b>{" "}
-                8713421279
+                <i className="mr-1 pi pi-phone"></i> <b> Por favor informe: </b>{newPost.numeroContacto}
               </p>
               <p>
                 {" "}
-                <i className="mr-1 pi pi-map"></i> <b> Estado:</b> Nuevo León
+                <i className="mr-1 pi pi-map"></i> <b> Estado:</b> {newPost.estado}
               </p>
               <p>
                 {" "}
                 <i className="mr-1 pi pi-map-marker"></i>{" "}
-                <b> Última vez vista:</b> Nuevo Castilla
+                <b> Última vez vista:</b> {newPost.ultimaLocalizacion}
               </p>
               <p>
                 {" "}
                 <i className="mr-1 pi pi-exclamation-circle"></i>{" "}
-                <b> Status:</b> Desaparecida
+                <b> Status:</b> {newPost.status}
               </p>
             </div>
             <hr />
             <p className="info">
-              Debanhi Susana Escobar Bazaldúa (Monterrey, Nuevo León, 4 de
-              septiembre de 2003-21 de abril de 2022), fue una joven estudiante
-              de Derecho de 18 años de edad, hija de Mario Escobar y Dolores
-              Bazaldúa.Alrededor de las 11 de la noche del viernes 8 de
-              abril de 2022, Escobar salió de su casa para ir a una fiesta a la
-              que fue acompañada por dos amigas; Saraí e Ivonne. Cerca de las 11:30,
-              las tres llegaron en un taxi de plataforma digital a una reunión
-              en la calle Simón Bolívar, en el centro de San Nicolás, lugar en
-              donde además fueron a una tienda de autoservicio a comprar una
-              botella de vodka y otros artículos para acompañar la bebida.
-              Las amigas comentaron en una declaración que pidieron un automóvil 
-              de la compañía didi a las 12:49del sábado 9 de abril,
-              y lo abordaron a la 1:00 de la mañana, el
-              cual las llevaría a una Quinta ubicada en Vía Numancia.
+             {newPost.descripcion}
             </p>
           </div>
           {/* End Info */}
