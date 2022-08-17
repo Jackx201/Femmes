@@ -5,9 +5,13 @@
   align-items: center;
   justify-content: center;
 }
-.p-inputtext{
+.p-inputtext, .p-cascadeselect-label{
   background-color: #623d95 !important;
+  border: rgb(246, 246, 246) !important;
+}
 
+.p-inputwrapper{
+  border: rgb(246, 246, 246) !important;
 }
 
 .fieldLabel{
@@ -18,7 +22,7 @@
   color: rgb(255, 173, 173) !important;
 }
 
-.p-datepicker-trigger, .p-datepicker{
+.p-datepicker-trigger, .p-datepicker, .p-cascadeselect-trigger{
   background-color: rgb(212, 74, 162) !important;
 }
 

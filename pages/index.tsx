@@ -2,7 +2,6 @@ import CardComponent from "../components/Card";
 import HeaderComponent from "../components/Header";
 import styles from "../styles/Home.module.css";
 import React from "react";
-import { useRouter } from "next/router";
 
 const Home = ({ posts }: any) => {
 

@@ -28,7 +28,7 @@ const TextEditorComponent = (props: EditorProps) => {
         />
       </div>
       <div className="container">
-      <Button className="my-3">Publicar</Button>
+      <Button type="submit" className="my-3">Publicar</Button>
       <Button type="reset" className="p-button-secondary my-3 ml-3">
         Cancelar
       </Button>

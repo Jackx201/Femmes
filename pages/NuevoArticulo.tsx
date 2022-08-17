@@ -2,17 +2,15 @@ import HeaderComponent from "../components/Header";
 import TextEditorComponent from "../components/TextEditorComponent";
 import styles from "../styles/Home.module.css";
 
-const newPost = () => {
-   const handleSubmit = (event: any) => {
-    event.preventDefault();
-  }
+const NuevoArticulo = () => {
+
   return (
     <>
       <HeaderComponent></HeaderComponent>
       <div className={styles.editor}>
-        <form onSubmit={handleSubmit}>
+        <form method="POST">
           <TextEditorComponent
-            header="Nueva Publicación"
+            header="Nuevo Artículo"
           ></TextEditorComponent>
         </form>
       </div>
@@ -20,4 +18,4 @@ const newPost = () => {
   );
 };
 
-export default newPost;
+export default NuevoArticulo;

@@ -1,7 +1,5 @@
 import React from "react";
 import { Menubar } from "primereact/menubar";
-import { InputText } from "primereact/inputtext";
-import ButtonComponent from "./ButtonComponent";
 import { Button } from "primereact/button";
 
 const HeaderComponent = () => {
@@ -16,9 +14,14 @@ const HeaderComponent = () => {
       icon: "pi pi-fw pi-pencil",
       items: [
         {
-          label: "Nuevo Post",
+          label: "Reportar Desaparición",
+          icon: "pi pi-id-card",
+          command: () =>  { location.href = '/NuevaPublicacion' }
+        },
+        {
+          label: "Redactar Articulo",
           icon: "pi pi-fw pi-plus",
-          command: () =>  { location.href = '/newPost' }
+          command: () =>  { location.href = '/NuevoArticulo' }
         },
         {
           label: "Mis Posts",

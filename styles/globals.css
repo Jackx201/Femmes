@@ -75,8 +75,8 @@ h1{
 
 .ql-editor{
   background-color: #643b45 !important;
-  border-bottom-right-radius: 50px !important;
-  border-bottom-left-radius: 50px !important;
+  border-bottom-right-radius: 25px !important;
+  border-bottom-left-radius: 25px !important;
 }
 
 .p-editor-toolbar  {
@@ -149,6 +149,10 @@ h1{
   color: rgb(255, 255, 255) !important;
 }
 
+.pink-button{
+  background-color: #ec509d !important;
+  color: rgb(255, 255, 255) !important;
+}
 /* CarouselDemo.css */
 
 .carousel-demo .product-item .product-item-content {
@@ -164,3 +168,10 @@ h1{
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
  
+.p-fileupload-content{
+  background-color: #933db5 !important;
+}
+
+.p-fileupload-row{
+  height: 240px;
+}
