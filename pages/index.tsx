@@ -2,6 +2,7 @@ import CardComponent from "../components/Card";
 import HeaderComponent from "../components/Header";
 import styles from "../styles/Home.module.css";
 import React from "react";
+import { Button } from "primereact/button";
 
 const Home = ({ posts }: any) => {
 
@@ -27,8 +28,15 @@ const Home = ({ posts }: any) => {
           ))}
         </div>
       </div>
+      <div className="container my-4">
+      <Button
+      label="Explorar Artículos"
+      icon="pi pi-book"
+      className="p-button p-button-success p-component px-5 p-button-rounded"
+      />
+      </div>
       <div className={"container my-3"}>
-        <h1>Ayudanos a Encontrarlas</h1>
+        <h1>Ayúdanos a Encontrarlas</h1>
       </div>
       <div className={styles.container}>
         <div className="grid">

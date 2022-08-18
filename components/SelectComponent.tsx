@@ -25,7 +25,7 @@ const CascadeComponent = () => {
         optionGroupLabel={"nombre"}
         optionGroupChildren={["municipios"]}
         style={{ minWidth: "17rem" }}
-        placeholder={"Select a City"}
+        placeholder={"Lerdo - Durango"}
         name="estado"
         onChange={(event) => setSelectedCity1(event.value)}
       />

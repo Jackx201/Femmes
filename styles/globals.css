@@ -33,6 +33,7 @@ h1{
   display: flex;
   justify-content: center;
   background-color: #5f3488;
+  animation: fadeIn 1s; 
 }
 
 .card{
@@ -44,6 +45,7 @@ h1{
   box-shadow: 5% #4f1c82;
   display: flex;
   justify-content: center;
+  animation: fadeIn 1.5s; 
 }
 
 .col{
@@ -108,6 +110,7 @@ h1{
   height: 200px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+  
 }
 
 @media screen and (min-width: 0px) and (max-width: 516px) {
@@ -135,8 +138,16 @@ h1{
   font-size: 350% !important;
 }
 
-#statusBanner{
+#redStatusBanner{
   background-color: rgb(232, 78, 78);
+}
+
+#blackStatusBanner{
+  background-color: rgb(38, 38, 41);
+}
+
+#greenStatusBanner{
+  background-color: rgb(143, 209, 125);
 }
 
 .p-submenu-list, .p-menubar-root-list{
@@ -174,4 +185,17 @@ h1{
 
 .p-fileupload-row{
   height: 240px;
+}
+
+.p-fileupload-buttonbar{
+  border: #4f1c82 !important;
+}
+
+.p-fileupload-content{
+  border: #4f1c82 !important;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }

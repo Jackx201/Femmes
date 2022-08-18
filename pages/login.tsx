@@ -7,6 +7,7 @@ import { Password } from "primereact/password";
 import { Dialog } from "primereact/dialog";
 import { Divider } from "primereact/divider";
 import { classNames } from "primereact/utils";
+import { redirect } from "next/dist/server/api-utils";
 
 const login = () => {
   const [showMessage, setShowMessage] = useState(false);
@@ -101,7 +102,8 @@ const login = () => {
         <div className="flex justify-content-center">
           <div className="card">
             <h1 className="text-center">Iniciar Sesión</h1>
-            <form onSubmit={handleSubmit(onSubmit)} className="p-fluid">
+            {/* onSubmit={handleSubmit(onSubmit)} */}
+            <form className="p-fluid">
               <div className="field pt-3">
                 <span className="p-float-label p-input-icon-right">
                   <i className="pi pi-envelope" />
@@ -155,11 +157,15 @@ const login = () => {
               </div>
               {/* Términos y condiciones */}
               <div className="text-center">
-                <Button
-                  type="submit"
+                <a href="http://localhost:3000/">
+                  <div>
+                  <Button
+                  type="button"
                   label="Iniciar Sesión"
                   className="my-2 p-button-success w-5 p-button-rounded"
                 />
+                  </div>
+                </a>
               </div>
             </form>
 

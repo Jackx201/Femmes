@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import HeaderComponent from "../../../components/Header";
 import { useState, useEffect } from "react";
+import StatusBarComponent from "../../../components/StatusBanner";
 
 export default function PostsPage() {
   
@@ -47,8 +48,10 @@ export default function PostsPage() {
     <>
       <HeaderComponent></HeaderComponent>
 
-      <div className="container" id="statusBanner">
-        <h1>Ayúdanos a localizarla</h1>
+      <div>
+      <StatusBarComponent
+        status={newPost.status}
+      />
       </div>
 
       <div className="container mt-3">

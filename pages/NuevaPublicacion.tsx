@@ -7,7 +7,6 @@ import CascadeComponent from "../components/SelectComponent";
 import { Calendar } from "primereact/calendar";
 import { InputTextarea } from 'primereact/inputtextarea';
 import { Button } from "primereact/button";
- 
 
 export default function NuevaPublicacion() {
 
@@ -51,7 +50,7 @@ export default function NuevaPublicacion() {
     <>
       <HeaderComponent></HeaderComponent>
 
-      <div className="container" id="statusBanner">
+      <div className="container">
         <h2>Reportar Desaparición</h2>
       </div>
 
