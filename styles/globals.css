@@ -110,7 +110,6 @@ h1{
   height: 200px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  
 }
 
 @media screen and (min-width: 0px) and (max-width: 516px) {
@@ -150,7 +149,7 @@ h1{
   background-color: rgb(143, 209, 125);
 }
 
-.p-submenu-list, .p-menubar-root-list{
+.p-submenu-list, .p-menubar-root-list, .p-cascadeselect-item-content{
   background-color: #ce577d !important;
 }
 
@@ -167,16 +166,13 @@ h1{
 /* CarouselDemo.css */
 
 .carousel-demo .product-item .product-item-content {
-  border: 1px solid var(--surface-d);
-  border-radius: 3px;
-  margin: .3rem;
-  text-align: center;
-  padding: 2rem 0;
+  display: flex;
+  justify-content: center !important;
+  animation: fadeIn 4s; 
 }
 
 .carousel-demo .product-item .product-image {
-  width: 50%;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 100px 60px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
  
 .p-fileupload-content{

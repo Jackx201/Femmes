@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Carousel } from 'primereact/carousel';
 import CardComponent from '../components/Card';
 
-const sandbox = ({ posts }: any) => {
+const CarouselComponent = ({ posts }: any) => {
 
 
     const responsiveOptions = [
@@ -25,7 +25,7 @@ const sandbox = ({ posts }: any) => {
     ];
 
     
-    const productTemplate1 = (article: any) => {
+    const productTemplate = (article: any) => {
         return (
 
                 <div className="product-item">
@@ -33,8 +33,8 @@ const sandbox = ({ posts }: any) => {
                     <CardComponent
                     id={article.id}
                     title={article.title}
-                    subtitle={article.subtitle}
-                    body={article.body}
+                    subtitle={article.user}
+                    body={article.name}
                     imgsrc={article.img}
                   ></CardComponent>
                 </div>
@@ -43,24 +43,23 @@ const sandbox = ({ posts }: any) => {
     }
 
     return (
-    <>
-    <div className="carousel-demo mt-8">
-        <Carousel value={posts} numVisible={3} numScroll={3} responsiveOptions={responsiveOptions}
-        itemTemplate={productTemplate1} />
-    </div>
-    </>
+        <div className="carousel-demo mt-8">
+            
+                <Carousel value={posts} numVisible={3} numScroll={3} responsiveOptions={responsiveOptions}
+                itemTemplate={productTemplate} />
+            
+        </div>
     );
 }
 
 export const getServerSideProps = async (ctx: any) => {
-  const posts = await require("./api/data.json")
+  const res = await fetch("http://localhost:8080/api/Useres");
+  const posts = await res.json();
   return {
     props: {
-      posts: posts,
+      posts: posts.contenido,
     },
   };
 };
-
-
     
-export default sandbox;
+export default CarouselComponent;
