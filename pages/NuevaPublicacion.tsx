@@ -152,14 +152,3 @@ export default function NuevaPublicacion() {
   );
 }
 
-/*
-Carlos, su padre, informó que salió el sábado de su domicilio ubicado en la colonia Miravalle.
-
-Mide 1.60 metros de estatura, es de tez blanca, cabello corto y negro, y vestía pantalón negro con figuras de anime, blusa negra y tenis rosas.
-
-8712500628 y 8711817323 son los números telefónicos de contacto para reportar su paradero.
-
-Todavía, hasta la tarde de este lunes, Camila no había sido encontrada.
-
-"Me han dicho que la vieron cerca de un Oxxo en Miravalle y sentada en una banca en la colonia San Alberto", dijo su papá.
-*/

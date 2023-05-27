@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import { Carousel } from 'primereact/carousel';
 import CardComponent from '../components/Card';
+import { API_URL } from "../config";
+
 
 const CarouselComponent = ({ posts }: any) => {
 
@@ -53,8 +55,8 @@ const CarouselComponent = ({ posts }: any) => {
 }
 
 export const getServerSideProps = async (ctx: any) => {
-  const res = await fetch("http://localhost:8080/api/Useres");
-  const posts = await res.json();
+    const res = await fetch(API_URL + "/users");
+    const posts = await res.json();
   return {
     props: {
       posts: posts.contenido,

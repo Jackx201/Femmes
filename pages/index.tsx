@@ -3,6 +3,8 @@ import HeaderComponent from "../components/Header";
 import styles from "../styles/Home.module.css";
 import React from "react";
 import { Button } from "primereact/button";
+import { API_URL } from "../config";
+
 
 const Home = ({ posts }: any) => {
 
@@ -58,7 +60,7 @@ const Home = ({ posts }: any) => {
 };
 
 export const getServerSideProps = async (ctx: any) => {
-  const res = await fetch("http://localhost:8080/api/publicaciones");
+  const res = await fetch(API_URL + "/publicaciones");
   const posts = await res.json();
   return {
     props: {

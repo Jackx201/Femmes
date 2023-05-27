@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import HeaderComponent from "../../../components/Header";
 import { useState, useEffect } from "react";
 import StatusBarComponent from "../../../components/StatusBanner";
+import { API_URL } from "../../../config";
 
 export default function PostsPage() {
   
@@ -21,10 +22,7 @@ export default function PostsPage() {
   });
 
   const getPost = async () => {
-    const res = await fetch(
-      `http://localhost:8080/api/publicaciones/${query.id}`
-      // `http://zahuldominguez.ddns.net:8080/api/publicaciones/${query.id}` 
-    );
+    const res = await fetch(`${API_URL}/publicaciones/${query.id}`);
     const data = await res.json();
     setNewPost({
       titulo: data.titulo,
